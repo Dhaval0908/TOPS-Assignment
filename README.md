@@ -1,10 +1,10 @@
 # Tops-Assignment
 
-Welcome to my repository! This is where I share all the assignments from my MERN course at TOPS TECHNOLOGIES, an IT Training Company.
+Welcome to my repository! This is where I share all the assignments from my MERN Stack course at TOPS TECHNOLOGIES, an IT Training Company.
 
 ## Overview
 
-This repository contains the code and documentation for the assignments completed during my MERN course at TOPS TECHNOLOGIES. Each assignment focuses on different modules covering various aspects of software engineering and IT fundamentals.
+This repository contains the code and documentation for the assignments completed during my MERN Stack course at TOPS TECHNOLOGIES. Each assignment focuses on different modules covering various aspects of software engineering and IT fundamentals.
 
 ### Modules Covered:
 
