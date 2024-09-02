@@ -6,7 +6,7 @@ Welcome to my repository! This is where I share all the assignments from my MERN
 
 This repository contains the code and documentation for the assignments completed during my MERN Stack course at TOPS TECHNOLOGIES. Each assignment focuses on different modules covering various aspects of software engineering and IT fundamentals.
 
-### Modules Covered:
+### In SE Assignment Covered:
 
 1. **MODULE 1: SE – Overview of IT Industry**
    - Provides an introduction to the IT industry, covering industry trends, technologies, and career pathways.
