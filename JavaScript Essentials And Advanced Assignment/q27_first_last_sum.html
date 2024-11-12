@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>First Last Digit Sum</title>
+</head>
+<body>
+    <script>
+        function sumFirstLastDigit(num) {
+            let strNum = num.toString();
+            let firstDigit = parseInt(strNum[0]);
+            let lastDigit = parseInt(strNum[strNum.length - 1]);
+            return firstDigit + lastDigit;
+        }
+        
+        console.log(sumFirstLastDigit(1234));
+    </script>
+</body>
+</html>

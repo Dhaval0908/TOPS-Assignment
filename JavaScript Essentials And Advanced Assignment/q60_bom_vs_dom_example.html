@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM vs DOM Example</title>
+</head>
+<body>
+    <h2>BOM vs DOM Examples</h2>
+    
+    <!-- DOM Example -->
+    <div id="domExample">This text will be changed by DOM</div>
+    
+    <!-- BOM Example -->
+    <div id="bomInfo"></div>
+    
+    <script>
+    // DOM Manipulation
+    document.getElementById("domExample").innerText = "Hello, World! (Changed by DOM)";
+    
+    // BOM Examples
+    const bomInfo = document.getElementById("bomInfo");
+    
+    // Window information
+    bomInfo.innerHTML += `<p>Window inner height: ${window.innerHeight}px</p>`;
+    bomInfo.innerHTML += `<p>Window inner width: ${window.innerWidth}px</p>`;
+    
+    // Location information
+    bomInfo.innerHTML += `<p>Current URL: ${window.location.href}</p>`;
+    
+    // Navigator information
+    bomInfo.innerHTML += `<p>Browser: ${navigator.userAgent}</p>`;
+    
+    // Screen information
+    bomInfo.innerHTML += `<p>Screen width: ${screen.width}px</p>`;
+    bomInfo.innerHTML += `<p>Screen height: ${screen.height}px</p>`;
+    </script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Digit Sum</title>
+</head>
+<body>
+    <script>
+        function sumOfDigits(num) {
+            return num.toString().split('').reduce((acc, digit) => acc + parseInt(digit), 0);
+        }
+        
+        console.log(sumOfDigits(1523));
+    </script>
+</body>
+</html>

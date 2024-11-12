@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert Array to CSV</title>
+</head>
+<body>
+    <script>
+    function convertToCSV(data) {
+        const headers = Object.keys(data[0]).join(',');
+        const rows = data.map(row => Object.values(row).join(',')).join('\n');
+        return headers + '\n' + rows;
+    }
+    
+    let data = [
+        { name: "John", age: 25 },
+        { name: "Jane", age: 29 },
+        { name: "Jake", age: 21 }
+    ];
+    console.log(convertToCSV(data));
+    </script>
+</body>
+</html>

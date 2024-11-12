@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawback of Methods in Objects</title>
+</head>
+<body>
+    <h1>Drawback of Declaring Methods Directly in JavaScript Objects</h1>
+    <p>When methods are declared directly in JavaScript objects, each instance of the object will 
+    have its own copy of the method, leading to higher memory consumption. Using prototypes, 
+    especially in constructor functions, allows methods to be shared across instances.</p>
+    
+    <script>
+    // Example demonstrating the drawback
+    function BadExample() {
+        this.method = function() { console.log('Hello'); }
+    }
+    
+    function GoodExample() {}
+    GoodExample.prototype.method = function() { console.log('Hello'); }
+    
+    // Each instance of BadExample has its own copy of the method
+    const bad1 = new BadExample();
+    const bad2 = new BadExample();
+    console.log(bad1.method !== bad2.method); // true - different copies
+    
+    // Instances of GoodExample share the same method
+    const good1 = new GoodExample();
+    const good2 = new GoodExample();
+    console.log(good1.method === good2.method); // true - same reference
+    </script>
+</body>
+</html>

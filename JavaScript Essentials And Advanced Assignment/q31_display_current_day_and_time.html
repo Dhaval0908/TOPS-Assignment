@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Current Day and Time</title>
+</head>
+<body>
+    <script>
+    function displayCurrentDayTime() {
+        const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        let date = new Date();
+        let day = days[date.getDay()];
+        let hours = date.getHours();
+        let minutes = date.getMinutes();
+        let seconds = date.getSeconds();
+        let ampm = hours >= 12 ? 'PM' : 'AM';
+        hours = hours % 12 || 12; // convert to 12-hour format
+    
+        console.log(`Today is ${day}. Current Time is ${hours} ${ampm}: ${minutes} : ${seconds}`);
+    }
+    
+    displayCurrentDayTime();
+    </script>
+</body>
+</html>

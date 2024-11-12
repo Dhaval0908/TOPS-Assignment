@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Palindrome Checker</title>
+</head>
+<body>
+    <script>
+        function isPalindrome(num) {
+            let reversed = num.toString().split('').reverse().join('');
+            return num.toString() === reversed;
+        }
+        
+        let count = 0;
+        while (count < 3) {
+            let num = prompt("Enter a number:");
+            if (isPalindrome(num)) {
+                console.log(`${num} is a palindrome`);
+            } else {
+                console.log(`${num} is not a palindrome`);
+            }
+            count++;
+        }
+    </script>
+</body>
+</html>

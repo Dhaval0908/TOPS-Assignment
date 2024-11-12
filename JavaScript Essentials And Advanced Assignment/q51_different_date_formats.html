@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Different Date Formats</title>
+</head>
+<body>
+    <script>
+    function formatDate(date) {
+        let day = String(date.getDate()).padStart(2, '0');
+        let month = String(date.getMonth() + 1).padStart(2, '0');
+        let year = date.getFullYear();
+    
+        console.log(`${month}-${day}-${year}`);
+        console.log(`${month}/${day}/${year}`);
+        console.log(`${day}-${month}-${year}`);
+        console.log(`${day}/${month}/${year}`);
+    }
+    
+    formatDate(new Date());
+    </script>
+</body>
+</html>

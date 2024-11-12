@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Form Validation</title>
+    <style>
+        .error { color: red; }
+    </style>
+</head>
+<body>
+    <form id="dynamicForm">
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" oninput="validateUsername()">
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" oninput="validateEmail()">
+        </div>
+        <p id="error-message" class="error"></p>
+        <input type="submit" value="Submit">
+    </form>
+    
+    <script>
+    function validateUsername() {
+        let username = document.getElementById("username").value;
+        if (username.length < 3) {
+            document.getElementById("error-message").innerText = "Username must be at least 3 characters.";
+        } else {
+            document.getElementById("error-message").innerText = "";
+        }
+    }
+    
+    function validateEmail() {
+        let email = document.getElementById("email").value;
+        if (!email.includes("@")) {
+            document.getElementById("error-message").innerText = "Invalid email format.";
+        } else {
+            document.getElementById("error-message").innerText = "";
+        }
+    }
+    </script>
+</body>
+</html>

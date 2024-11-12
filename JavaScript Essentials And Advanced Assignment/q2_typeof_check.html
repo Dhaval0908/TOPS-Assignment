@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Typeof Check</title>
+</head>
+<body>
+    <script>
+        let strNumber = '10';
+        var num = 10;
+        if (typeof strNumber !== typeof num) {
+            strNumber = Number(strNumber);
+        }
+        console.log(strNumber === num); 
+    </script>
+</body>
+</html>

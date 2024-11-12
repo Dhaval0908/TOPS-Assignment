@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array vs Object Comparison</title>
+</head>
+<body>
+    <h2>Array vs Object Differences</h2>
+    <div id="output"></div>
+    
+    <script>
+    const output = document.getElementById("output");
+    
+    // Array Examples
+    let array = [1, 2, 3];
+    output.innerHTML += "<h3>Array Examples:</h3>";
+    output.innerHTML += `<p>Array: [${array}]</p>`;
+    output.innerHTML += `<p>Access by index: array[0] = ${array[0]}</p>`;
+    output.innerHTML += `<p>Length: ${array.length}</p>`;
+    
+    // Object Examples
+    let obj = { name: "John", age: 30 };
+    output.innerHTML += "<h3>Object Examples:</h3>";
+    output.innerHTML += `<p>Object: ${JSON.stringify(obj)}</p>`;
+    output.innerHTML += `<p>Access by key: obj.name = ${obj.name}</p>`;
+    output.innerHTML += `<p>Keys: ${Object.keys(obj)}</p>`;
+    
+    // Key Differences
+    output.innerHTML += "<h3>Key Differences:</h3>";
+    output.innerHTML += `
+        <ul>
+            <li>Arrays use numeric indices, Objects use named keys</li>
+            <li>Arrays maintain order, Objects don't guarantee order</li>
+            <li>Arrays have length property, Objects don't</li>
+            <li>Arrays are best for ordered data, Objects for key-value pairs</li>
+        </ul>
+    `;
+    </script>
+</body>
+</html>

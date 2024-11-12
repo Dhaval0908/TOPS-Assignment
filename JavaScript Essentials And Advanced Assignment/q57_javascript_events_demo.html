@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Events Demo</title>
+    <style>
+        .event-box {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>JavaScript Events Demo</h2>
+
+    <!-- Mouse Events -->
+    <div class="event-box">
+        <h3>Mouse Events</h3>
+        <button onclick="alert('Click event!')">Click Me</button>
+        <button ondblclick="alert('Double click event!')">Double Click Me</button>
+        <div onmouseover="this.style.backgroundColor='yellow'" 
+             onmouseout="this.style.backgroundColor='white'"
+             style="padding: 10px; border: 1px solid black;">
+            Hover over me
+        </div>
+    </div>
+
+    <!-- Keyboard Events -->
+    <div class="event-box">
+        <h3>Keyboard Events</h3>
+        <input type="text" 
+               onkeydown="document.getElementById('keyEvent').innerHTML='Key down'"
+               onkeyup="document.getElementById('keyEvent').innerHTML='Key up'"
+               placeholder="Type something...">
+        <p id="keyEvent"></p>
+    </div>
+
+    <!-- Form Events -->
+    <div class="event-box">
+        <h3>Form Events</h3>
+        <form onsubmit="event.preventDefault(); alert('Form submitted!');">
+            <input type="text" onfocus="this.style.backgroundColor='lightblue'"
+                   onblur="this.style.backgroundColor='white'"
+                   placeholder="Focus me">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <script>
+    // Window Events
+    window.onload = function() {
+        console.log('Page loaded');
+    }
+
+    window.onresize = function() {
+        console.log('Window resized');
+    }
+
+    // Scroll event
+    window.onscroll = function() {
+        console.log('Scrolling');
+    }
+    </script>
+</body>
+</html>

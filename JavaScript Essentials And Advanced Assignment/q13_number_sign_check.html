@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Number Sign Checker</title>
+</head>
+<body>
+    <script>
+        function checkPositiveNegative(number) {
+            if (number > 0) {
+                return "Positive";
+            } else if (number < 0) {
+                return "Negative";
+            } else {
+                return "Zero";
+            }
+        }
+        
+        console.log(checkPositiveNegative(10));
+        console.log(checkPositiveNegative(-5));
+        console.log(checkPositiveNegative(0));
+    </script>
+</body>
+</html>

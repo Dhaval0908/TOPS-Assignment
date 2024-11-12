@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Methods Examples</title>
+</head>
+<body>
+    <h2>String Methods Examples</h2>
+    <div id="output"></div>
+    
+    <script>
+    const output = document.getElementById("output");
+    
+    // Q62: Split String
+    let str1 = "JavaScript is fun";
+    let arr = str1.split(" ");
+    output.innerHTML += "<h3>Q62: Split String</h3>";
+    output.innerHTML += `<p>Original: "${str1}"</p>`;
+    output.innerHTML += `<p>Split result: ${JSON.stringify(arr)}</p>`;
+    
+    // Q63: Check if String Contains "Script"
+    let str2 = "JavaScript is fun";
+    output.innerHTML += "<h3>Q63: String Includes</h3>";
+    output.innerHTML += `<p>Contains "Script": ${str2.includes("Script")}</p>`;
+    
+    // Q64: Change All String Characters to Lowercase
+    let str3 = "HELLO WORLD";
+    output.innerHTML += "<h3>Q64: To Lowercase</h3>";
+    output.innerHTML += `<p>Original: "${str3}"</p>`;
+    output.innerHTML += `<p>Lowercase: ${str3.toLowerCase()}</p>`;
+    
+    // Q65: Character at Index 15 in String
+    let str4 = "30 Days of JavaScript";
+    output.innerHTML += "<h3>Q65: Character at Index</h3>";
+    output.innerHTML += `<p>String: "${str4}"</p>`;
+    output.innerHTML += `<p>Character at Index 15: "${str4.charAt(15)}"</p>`;
+    
+    // Q66: Copy One String to Another String
+    let original = "Hello, World!";
+    let copy = original;
+    output.innerHTML += "<h3>Q66: Copy String</h3>";
+    output.innerHTML += `<p>Original String: "${original}"</p>`;
+    output.innerHTML += `<p>Copied String: "${copy}"</p>`;
+    </script>
+</body>
+</html>

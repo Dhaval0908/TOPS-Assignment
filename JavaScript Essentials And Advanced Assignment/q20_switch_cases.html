@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Switch Case Examples</title>
+</head>
+<body>
+    <script>
+        // Days of the week
+        function dayOfWeek(day) {
+            switch(day) {
+                case 1: return "Monday";
+                case 2: return "Tuesday";
+                case 3: return "Wednesday";
+                case 4: return "Thursday";
+                case 5: return "Friday";
+                case 6: return "Saturday";
+                case 7: return "Sunday";
+                default: return "Invalid day";
+            }
+        }
+        
+        // Vowel or Consonant
+        function checkVowelConsonant(char) {
+            char = char.toLowerCase();
+            switch(char) {
+                case 'a':
+                case 'e':
+                case 'i':
+                case 'o':
+                case 'u':
+                    return "Vowel";
+                default:
+                    return "Consonant";
+            }
+        }
+        
+        console.log(dayOfWeek(3));
+        console.log(checkVowelConsonant('a'));
+        console.log(checkVowelConsonant('b'));
+    </script>
+</body>
+</html>

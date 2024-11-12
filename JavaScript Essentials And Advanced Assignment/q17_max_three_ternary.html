@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Maximum of Three Numbers - Ternary</title>
+</head>
+<body>
+    <script>
+        function findMax(a, b, c) {
+            return a > b ? (a > c ? a : c) : (b > c ? b : c);
+        }
+        
+        console.log(findMax(3, 9, 5));
+    </script>
+</body>
+</html>

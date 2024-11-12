@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Multiple Patterns</title>
+</head>
+<body>
+    <script>
+        // Pattern 1: Binary Pattern
+        console.log("Pattern 1:");
+        for (let i = 1; i <= 5; i++) {
+            let pattern = '';
+            for (let j = 1; j <= i; j++) {
+                pattern += (j % 2) + ' ';
+            }
+            console.log(pattern.trim());
+        }
+
+        // Pattern 2: Alphabet Pattern
+        console.log("\nPattern 2:");
+        let alph = 'A';
+        for (let i = 1; i <= 5; i++) {
+            let pattern = '';
+            for (let j = 1; j <= i; j++) {
+                pattern += alph + ' ';
+                alph = String.fromCharCode(alph.charCodeAt(0) + 1);
+            }
+            console.log(pattern.trim());
+        }
+
+        // Pattern 3: Number Sequence
+        console.log("\nPattern 3:");
+        let num = 1;
+        for (let i = 1; i <= 5; i++) {
+            let pattern = '';
+            for (let j = 1; j <= i; j++) {
+                pattern += num + ' ';
+                num++;
+            }
+            console.log(pattern.trim());
+        }
+
+        // Pattern 4: Star Pattern
+        console.log("\nPattern 4:");
+        for (let i = 1; i <= 5; i++) {
+            console.log('* '.repeat(i).trim());
+        }
+    </script>
+</body>
+</html>
