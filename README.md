@@ -29,3 +29,11 @@ Each module includes assignments that delve into practical applications and exer
 
 2. **MODULE 3: (HTML5)**
    - focusing on HTML5. Topics covered include new HTML5 tags like `<article>`, `<section>`, and `<nav>`, embedding audio and video using `<audio>` and `<video>` tags, the use of semantic elements to enhance the content structure, and graphic rendering with `<canvas>` and `<svg>`.
+
+### In JavaScript Essentials And Advanced Assignment Covered:
+
+   - A comprehensive collection of JavaScript assignments covering both essential and advanced concepts. This repository includes exercises on core JavaScript fundamentals, advanced topics, and practical implementations.
+  
+### In Module-14) React - Components, State, Props Assignment Covered:
+
+   - A repository covering React fundamentals, including components, state management, and props. This module explores key concepts for building dynamic and interactive user interfaces.
